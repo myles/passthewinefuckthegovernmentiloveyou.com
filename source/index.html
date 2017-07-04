@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title>Pass the Wine, Fuck the Government, I Love You</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:900">
+    </head>
+    <body>
+        <div class="cover" id="js-cover">
+            <div class="cover__wrapper">
+                <h1 class="cover__heading" id="js-heading">
+                    <span class="cover__heading-line cover__heading-line--one">Pass the <span class="cover__keyword cover__keyword--wine" id="js-wine">Wine</span>,</span><br/>
+
+                    <span class="cover__heading-line cover__heading-line--two">Fuck the <span class="cover__keyword cover__keyword--gov" id="js-gov">Government</span>,</span><br/>
+
+                    <span class="cover__heading-line cover__heading-line--three">I <span class="cover__keyword cover__keyword--love" id="js-love">Love</span> You</span>
+                </h1>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#js-wine').mouseover(function() {
+                    $('#js-cover').css('background-image',
+                                       'url("images/serge-esteve-7517.jpg")');
+                }).mouseout(function() {
+                    $('#js-cover').css('background-image', 'none');
+                });
+
+                $('#js-gov').hover(function() {
+                    $('#js-cover').css('background-image',
+                                       'url("images/jamie-street-136939.jpg")');
+                }).mouseout(function() {
+                    $('#js-cover').css('background-image', 'none');
+                });
+
+                $('#js-love').hover(function() {
+                    $('#js-cover').css('background-image',
+                                       'url("images/mayur-gala-487.jpg")');
+                }).mouseout(function() {
+                    $('#js-cover').css('background-image', 'none');
+                });
+            });
+        </script>
+    </body>
+</html>
